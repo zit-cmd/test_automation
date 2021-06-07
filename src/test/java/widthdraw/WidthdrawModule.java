@@ -13,6 +13,7 @@ public class WidthdrawModule {
 
     public void logIn() {
         driver.get("http://www.demo.guru99.com/V4/");
+        driver.manage().window().maximize();
         WebElement userName = driver.findElement(By.name("uid"));
         userName.sendKeys("mngr331896");
         WebElement pass = driver.findElement(By.name("password"));
